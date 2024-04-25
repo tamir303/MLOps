@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "P0vgMlu+jyMbQExo/GzXTBGF1qYp6H4n1oAn5wZP8Vl2O4f2oD+NWwLVgEllF3VEjuahEmnyPtk7Iq/1sz673Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\LinearRegression\\LinearRegression.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tamir\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\mathnet.numerics\\6.0.0-beta1\\mathnet.numerics.6.0.0-beta1.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0-preview.3.24172.9\\microsoft.extensions.configuration.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.0-preview.3.24172.9\\microsoft.extensions.configuration.abstractions.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0-preview.3.24172.9\\microsoft.extensions.dependencyinjection.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0-preview.3.24172.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.logging\\9.0.0-preview.3.24172.9\\microsoft.extensions.logging.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0-preview.3.24172.9\\microsoft.extensions.logging.abstractions.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-preview.3.24172.9\\microsoft.extensions.options.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.3.24172.9\\microsoft.extensions.primitives.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.0-preview.3.24172.9\\system.configuration.configurationmanager.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.0-preview.3.24172.9\\system.diagnostics.eventlog.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.0-preview.3.24172.9\\system.security.cryptography.protecteddata.9.0.0-preview.3.24172.9.nupkg.sha512"
+  ],
+  "logs": []
+}

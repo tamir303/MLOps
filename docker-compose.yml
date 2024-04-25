@@ -1,0 +1,6 @@
+﻿services:
+  linearregression:
+    image: linearregression
+    build:
+      context: .
+      dockerfile: LinearRegression/Dockerfile
