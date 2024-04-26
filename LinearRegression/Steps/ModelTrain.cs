@@ -1,5 +1,6 @@
 namespace LinearRegression.Steps;
 using LinearRegression.Model;
+using LinearRegression.Model.Implementations;
 using MathNet.Numerics.LinearAlgebra;
 using LinearRegression.Config;
 

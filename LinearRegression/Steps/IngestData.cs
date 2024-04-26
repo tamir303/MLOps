@@ -4,8 +4,8 @@ using LinearRegression.Data;
 
 public class IngestData
 {
-    private readonly string _trainFilePath = "LinearRegression/Data/data_training.csv";
-    private readonly string _valFilePath = "LinearRegression/Data/data_validation.csv";
+    private readonly string _trainFilePath = "C:\\Users\\tamir\\RiderProjects\\MLOps\\LinearRegression\\Data\\data_training.csv";
+    private readonly string _valFilePath = "C:\\Users\\tamir\\RiderProjects\\MLOps\\LinearRegression\\Data\\data_validation.csv";
     
     public (Matrix<float> x_train, Vector<float> y_train,
         Matrix<float> x_val, Vector<float> y_val) GetData() 

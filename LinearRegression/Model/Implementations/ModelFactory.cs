@@ -1,4 +1,4 @@
-namespace LinearRegression.Model;
+namespace LinearRegression.Model.Implementations;
 
 public abstract class ModelFactory
 {
