@@ -15,7 +15,7 @@ public class ModelTrain
         
         if (isCached)
         {
-            const string pathToModel = "LinearRegression/Save/{modelName}.xml";
+            const string pathToModel = "MLOps/Save/{modelName}.xml";
             if (File.Exists(pathToModel))
             {
                 model = ModelFactory.LoadModelFromFile(modelType, pathToModel);

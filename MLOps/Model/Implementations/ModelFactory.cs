@@ -4,7 +4,7 @@ public abstract class ModelFactory
 {
     public static AbstractModel CreateCleanModel(string modelType)
     {
-        if (modelType.Equals("LinearRegression"))
+        if (modelType.Equals("MLOps"))
             return new LinearRegression();
         
         return null;
@@ -12,7 +12,7 @@ public abstract class ModelFactory
 
     public static AbstractModel LoadModelFromFile(string modelType, string filePath)
     {
-        if (modelType.Equals("LinearRegression"))
+        if (modelType.Equals("MLOps"))
             return AbstractModel.Load<LinearRegression>(filePath);
 
         return null;
