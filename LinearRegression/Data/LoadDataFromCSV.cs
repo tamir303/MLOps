@@ -1,49 +1,38 @@
 using System.Globalization;
 using CsvHelper;
-using MathNet.Numerics.LinearAlgebra;
 namespace LinearRegression.Data;
 
 public static class LoadDataFromCsv
 {
-    public static (Matrix<float> input, Vector<float> output) LoadFromPath(string filePath)
+    public static (List<List<string>> input, List<string> target, List<string> headers) 
+        LoadFromPath(string filePath)
     {
         try
         {
+            if (String.IsNullOrEmpty(filePath) || !File.Exists(filePath))
+                throw new FileNotFoundException();
+            
+            
+            // Load the data from the CSV file and read the headers
             var reader = new StreamReader(filePath);
-            var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-            var records = csv.GetRecords<dynamic>();
             
-            // Retrieve headers to determine input and output columns
-            // Initialize input columns based on header count
-            var recordsCount = records.Count();
-            var numOfColumns = csv.HeaderRecord.Length;
-            var outputValues = new List<float>();
-            var inputColumns = Enumerable.Range(0, recordsCount)
-                .Select(_ => new List<float>())
-                .ToList();  
+            // Read the headers
+            var line = reader.ReadLine();
             
-            // Read records and populate input and output lists
-            foreach (var record in records) 
-                for (var i = 0; i < numOfColumns; i++)
-                {
-                    var value = Convert.ToSingle(record);
-                    Console.WriteLine(value);
-                    if (i == numOfColumns - 1)
-                        inputColumns[i].Add(value);
-                    else
-                        outputValues.Add(value);
-                }
+            // Initialize the input list and output list
+            var input = new List<List<string>>();
+            var target = new List<string>();
+            var headers = line.Split(',').ToList();
 
-
-            // Convert input columns to input matrix
-            var inputMatrix = Matrix<float>.Build
-                .DenseOfColumnArrays(inputColumns.ConvertAll(list => list.ToArray()));
-
-            // Convert output values to output vector
-            var outputVector = Vector<float>.Build
-                .DenseOfArray(outputValues.ToArray());
+            // Read the data from the CSV file and store it in the input and output lists
+            while ((line = reader.ReadLine()) != null)
+            {
+                var row = line.Split(',').ToList();
+                input.Add(row.GetRange(0, headers.Count - 1).ToList());
+                target.Add(row.Last());
+            }
             
-            return (inputMatrix, outputVector);
+            return (input, target, headers);
         }
         catch (Exception ex)
         {

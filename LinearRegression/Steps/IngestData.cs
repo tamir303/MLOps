@@ -4,21 +4,24 @@ using LinearRegression.Data;
 
 public class IngestData
 {
-    private readonly string _trainFilePath = "C:\\Users\\tamir\\RiderProjects\\MLOps\\LinearRegression\\Data\\data_training.csv";
-    private readonly string _valFilePath = "C:\\Users\\tamir\\RiderProjects\\MLOps\\LinearRegression\\Data\\data_validation.csv";
+    private readonly string _trainFilePath = "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\LinearRegression\\Data\\data_training.csv";
+    private readonly string _valFilePath = "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\LinearRegression\\Data\\data_validation.csv";
     
-    public (Matrix<float> x_train, Vector<float> y_train,
-        Matrix<float> x_val, Vector<float> y_val) GetData() 
+    public (
+        List<List<string>> xTrain, List<string> yTrain, // Input and Output for Training
+        List<List<string>> xVal, List<string> yVal, // Input and Output for Validation
+        List<string> headers ) // Headers  
+        GetData() 
     {
         try
         {   
             // Load Training DataSet
-            var (x_train, y_train) = LoadDataFromCsv.LoadFromPath(this._trainFilePath);
+            var (xTrain, yTrain, headers) = LoadDataFromCsv.LoadFromPath(this._trainFilePath);
             // Load Validation DataSet
-            var (x_val, y_val) = LoadDataFromCsv.LoadFromPath(this._valFilePath);
+            var (xVal, yVal, _) = LoadDataFromCsv.LoadFromPath(this._valFilePath);
             
             Console.WriteLine("Ingested Data Successfully...");
-            return (x_train, y_train, x_val, y_val);
+            return (xTrain, yTrain, xVal, yVal, headers);
         }
         catch (FileLoadException ex)
         {

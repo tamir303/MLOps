@@ -1,6 +1,6 @@
 using MathNet.Numerics.Statistics;
 
-namespace LinearRegression.Data.Processing;
+namespace LinearRegression.Data.Processing.Implementations;
 using MathNet.Numerics.LinearAlgebra;
 
 public class Standard: IProcessor

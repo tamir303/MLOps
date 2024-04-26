@@ -18,12 +18,15 @@ public class TrainingPipeline : IPipeline
     
     public void Run()
     {
+        // TODO Figure what to do with the headers
+        
         // Get the data
-        var (xTrain, yTrain,
-            xVal, yVal) = _ingest_data.GetData();
+        var (xTrainList, yTrainList,
+            xValList, yValList, headers) = _ingest_data.GetData();
         
         // Process the data
-        (xTrain, xVal) = _processData.Prepare(xTrain, xVal);
+        var (xTrain, xVal, yTrain, yVal) = 
+            _processData.Prepare(xTrainList, xValList, yTrainList, yValList);
         
         // Train the model
         var model = _model_train.Train(xTrain, yTrain);
