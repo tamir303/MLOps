@@ -4,7 +4,7 @@ namespace LinearRegression.Steps;
 using LinearRegression.Model;
 using MathNet.Numerics.LinearAlgebra;
 
-public class ModelEval
+public class ModelEval : IStep
 {
     public (float r2_score, float mse) Evaluation(
         AbstractModel model, Matrix<float> x_val, Vector<float> y_val)

@@ -4,7 +4,7 @@ using LinearRegression.Model.Implementations;
 using MathNet.Numerics.LinearAlgebra;
 using LinearRegression.Config;
 
-public class ModelTrain
+public class ModelTrain : IStep
 {
     public AbstractModel Train(
         Matrix<float> x_train, Vector<float> y_train)

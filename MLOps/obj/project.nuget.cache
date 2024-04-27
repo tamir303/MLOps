@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o3LP9t3PLH1aDhROG7Qy3Cwot1ULoUSFN/P2iYbgV5OxuegevtgZaEANxEP4z/1+6jIzPgxjJeTdhpSmqJ4OZw==",
+  "dgSpecHash": "hgK0aRjHc2Gu4aN+h197zp7VINMqh2FDPkpPGhnn1R5+73wN+EWuA/CNd0hurvCiX7cj3TOzPeuE7tN2TaFMYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\MLOps\\MLOps.csproj",
+  "projectFilePath": "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\MLOps.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tamir\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512",
     "C:\\Users\\tamir\\.nuget\\packages\\mathnet.numerics\\6.0.0-beta1\\mathnet.numerics.6.0.0-beta1.nupkg.sha512",
@@ -14,9 +14,28 @@
     "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.0-preview.3.24172.9\\microsoft.extensions.logging.abstractions.9.0.0-preview.3.24172.9.nupkg.sha512",
     "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.options\\9.0.0-preview.3.24172.9\\microsoft.extensions.options.9.0.0-preview.3.24172.9.nupkg.sha512",
     "C:\\Users\\tamir\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.0-preview.3.24172.9\\microsoft.extensions.primitives.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.ml\\4.0.0-preview.24162.2\\microsoft.ml.4.0.0-preview.24162.2.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.ml.cpumath\\4.0.0-preview.24162.2\\microsoft.ml.cpumath.4.0.0-preview.24162.2.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.ml.dataview\\4.0.0-preview.24162.2\\microsoft.ml.dataview.4.0.0-preview.24162.2.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.codedom\\4.5.0\\system.codedom.4.5.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\tamir\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.0-preview.3.24172.9\\system.configuration.configurationmanager.9.0.0-preview.3.24172.9.nupkg.sha512",
     "C:\\Users\\tamir\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.0-preview.3.24172.9\\system.diagnostics.eventlog.9.0.0-preview.3.24172.9.nupkg.sha512",
-    "C:\\Users\\tamir\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.0-preview.3.24172.9\\system.security.cryptography.protecteddata.9.0.0-preview.3.24172.9.nupkg.sha512"
+    "C:\\Users\\tamir\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.numerics.tensors\\8.0.0\\system.numerics.tensors.8.0.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.0-preview.3.24172.9\\system.security.cryptography.protecteddata.9.0.0-preview.3.24172.9.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
+    "C:\\Users\\tamir\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

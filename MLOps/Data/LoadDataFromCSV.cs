@@ -20,15 +20,18 @@ public static class LoadDataFromCsv
             var line = reader.ReadLine();
             
             // Initialize the input list and output list
-            var input = new List<List<string>>();
-            var target = new List<string>();
             var headers = line.Split(',').ToList();
+            var input = Enumerable.Range(0, headers.Count - 1)
+                .Select(_ => new List<string>()).ToList();
+            var target = new List<string>();
 
             // Read the data from the CSV file and store it in the input and output lists
             while ((line = reader.ReadLine()) != null)
             {
                 var row = line.Split(',').ToList();
-                input.Add(row.GetRange(0, headers.Count - 1).ToList());
+                Enumerable.Zip(Enumerable.Range(0, headers.Count - 1), row)
+                    .ToList()
+                    .ForEach(pair => input[pair.First].Add(pair.Second));
                 target.Add(row.Last());
             }
             

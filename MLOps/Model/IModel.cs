@@ -1,8 +1,10 @@
 using MathNet.Numerics.LinearAlgebra;
+using Microsoft.ML;
+using Microsoft.ML.Data;
+using Microsoft.ML.Transforms;
 namespace LinearRegression.Model;
 
 public interface IModel
 {
-    public void Fit(Matrix<float> X, Vector<float> y, float learningRate, int epochs);
-    public Vector<float> Predict(Matrix<float> X);
+    IEstimator<ITransformer> CreateModel(MLContext mlContext);
 }

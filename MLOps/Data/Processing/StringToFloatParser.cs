@@ -39,7 +39,7 @@ public class StringToFloatParser
     
     private static Matrix<float> ParseMatrix(IEnumerable<List<string>> data)
     {
-        return Matrix<float>.Build.DenseOfColumnVectors(
-            data.Select(ParseVector));
+        return Matrix<float>.Build.DenseOfColumns(
+            data.Select(ParseVector).ToList());
     }
 }

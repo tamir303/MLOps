@@ -1,12 +1,10 @@
 using LinearRegression.Config;
 using LinearRegression.Data.Processing;
 using LinearRegression.Data.Processing.Implementations;
-using MathNet.Numerics.LinearAlgebra.Double;
-
 namespace LinearRegression.Steps;
 using MathNet.Numerics.LinearAlgebra;
 
-public class ProcessData
+public class ProcessData : IStep
 {
     public (
         Matrix<float> xTrain, Matrix<float> xVal, Vector<float> yTrain, Vector<float> yVal) Prepare(
@@ -28,9 +26,7 @@ public class ProcessData
         // Process each column of the matrix
         for (var i = 0; i < xTrain.ColumnCount; i++)
         {
-            Vector<float> column = Vector<float>.Build.Dense(50);
-            xVal.Column(0, column);
-            xTrain.SetColumn(i, strategy.Process(xTrain.Column(0)));
+            xTrain.SetColumn(i, strategy.Process(xTrain.Column(i)));
             xVal.SetColumn(i, strategy.Process(xVal.Column(i)));
         }
         

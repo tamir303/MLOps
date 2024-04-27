@@ -2,7 +2,7 @@ using MathNet.Numerics.LinearAlgebra;
 namespace LinearRegression.Steps;
 using LinearRegression.Data;
 
-public class IngestData
+public class IngestData : IStep
 {
     private readonly string _trainFilePath = "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\Data\\data_training.csv";
     private readonly string _valFilePath = "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\Data\\data_validation.csv";
