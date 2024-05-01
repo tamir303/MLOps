@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hgK0aRjHc2Gu4aN+h197zp7VINMqh2FDPkpPGhnn1R5+73wN+EWuA/CNd0hurvCiX7cj3TOzPeuE7tN2TaFMYQ==",
+  "dgSpecHash": "XpJ3i5b12+4S2Pn43tkpv89Uv+fsqTNXkiDDGrpqxm8N7twaIsKhjTcDfvyu2fce4PcsoO9mA593fHWHnddCxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\MLOps.csproj",
+  "projectFilePath": "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\MLOps\\MLOps.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tamir\\.nuget\\packages\\csvhelper\\31.0.4\\csvhelper.31.0.4.nupkg.sha512",
     "C:\\Users\\tamir\\.nuget\\packages\\mathnet.numerics\\6.0.0-beta1\\mathnet.numerics.6.0.0-beta1.nupkg.sha512",

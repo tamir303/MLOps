@@ -7,7 +7,7 @@ using MathNet.Numerics.LinearAlgebra;
 public class ModelEval : IStep
 {
     public (float r2_score, float mse) Evaluation(
-        AbstractModel model, Matrix<float> x_val, Vector<float> y_val)
+        ModelBase model, Matrix<float> x_val, Vector<float> y_val)
     {
         var predicted = model.Predict(x_val);
 

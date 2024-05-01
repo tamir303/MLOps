@@ -6,5 +6,7 @@ namespace LinearRegression.Model;
 
 public interface IModel
 {
-    IEstimator<ITransformer> CreateModel(MLContext mlContext);
+    void Train(Matrix<float> xTrain, Vector<float> yTrain);
+    Vector<float> Predict(Matrix<float> data);
+    float Predict(Vector<float> data);
 }

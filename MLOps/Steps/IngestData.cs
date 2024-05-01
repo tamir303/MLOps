@@ -4,8 +4,8 @@ using LinearRegression.Data;
 
 public class IngestData : IStep
 {
-    private readonly string _trainFilePath = "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\Data\\data_training.csv";
-    private readonly string _valFilePath = "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\Data\\data_validation.csv";
+    private readonly string _trainFilePath = "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\MLOps\\Data\\data_training.csv";
+    private readonly string _valFilePath = "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\MLOps\\Data\\data_validation.csv";
     
     public (
         List<List<string>> xTrain, List<string> yTrain, // Input and Output for Training

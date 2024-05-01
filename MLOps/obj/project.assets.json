@@ -1886,24 +1886,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tamir\\.nuget\\packages\\": {}
+    "C:\\Users\\tamir\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\MLOps.csproj",
+      "projectUniqueName": "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\MLOps\\MLOps.csproj",
       "projectName": "MLOps",
-      "projectPath": "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\MLOps.csproj",
+      "projectPath": "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\MLOps\\MLOps.csproj",
       "packagesPath": "C:\\Users\\tamir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tamir\\RiderProjects\\MLOps\\MLOps\\obj\\",
+      "outputPath": "C:\\Users\\tamir\\RiderProjects\\LinearRegression\\MLOps\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tamir\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\tamir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

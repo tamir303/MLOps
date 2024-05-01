@@ -4,8 +4,9 @@ namespace LinearRegression.Model.Implementations;
 
 public class LinearRegression : ModelBase
 {
-    public override IEstimator<ITransformer> CreateModel(MLContext mlContext)
+    public override void CreateModel(MLContext mlContext)
     {
-        return mlContext.Regression.Trainers.Sdca();
+        this._mlContext = mlContext;
+        this._model = mlContext.Regression.Trainers.Sdca();
     }
 }
